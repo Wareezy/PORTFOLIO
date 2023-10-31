@@ -2,14 +2,17 @@
     overflow-x: hidden;
    
   }
-h1,h2,h3{
+h1,h2,h3,p{
     font-family: Arapey;
   }
 h3{
   font-size: 20px;
 }
+p{
+  font-size: 20px;
+}
 .narrow-button {
-  width: 140px; /* You can adjust the width as needed */
+  width: 140px ; /* You can adjust the width as needed */
 }
 @keyframes pulse {
   0% {
@@ -35,4 +38,19 @@ h3{
 /* When hovering over the image, change its opacity */
 .hover-effect:hover {
   opacity: 1; /* Opacity on hover */
+}
+
+
+/* nav bar follows you when you scroll */
+.sticky {
+  position: fixed ;
+  top: 0;
+  width: 100%;
+}
+.image {
+  transition: opacity 0.3s;
+}
+
+.image:hover {
+  opacity: 0.7; /* Adjust the opacity value as desired */
 }
