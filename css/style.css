@@ -54,3 +54,16 @@ p{
 .image:hover {
   opacity: 0.7; /* Adjust the opacity value as desired */
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: #333; /* Change background color on hover */
+  border-radius: 5px; /* Optional: add some border-radius for a rounded effect */
+}
+.logo{
+  transition: transform 0.3s, filter 0.3s;
+}
+.logo:hover {
+  transform: scale(1.1); /* Increases size on hover */
+  filter: grayscale(100%); /* Turns the image grayscale on hover */
+}
