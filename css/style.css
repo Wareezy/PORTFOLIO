@@ -59,6 +59,7 @@ p{
   color: #fff; /* Change text color on hover */
   background-color: #333; /* Change background color on hover */
   border-radius: 5px; /* Optional: add some border-radius for a rounded effect */
+  transition: 0.5s;
 }
 .logo{
   transition: transform 0.3s, filter 0.3s;
