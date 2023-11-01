@@ -108,6 +108,7 @@ p{
 /* css for PROJECT PAGE */
 #warrenProjects{position: absolute; top: 2300px;left: 70px; }
 #projHead{padding-left: 100px; padding-top: 300px;padding-right:10px;}
+#projHead2{padding-left: 100px; padding-top: 50px;padding-right:10px;}
 #navHeadRazor{position: absolute;font-size: 15px;
 }
 #projImg{padding-right: 60px;padding-left: 75px; padding-top: 20px;}
@@ -184,25 +185,130 @@ padding: 40px 20px;
   
 
   /* css for skills page */
+#skillh1{
+  text-align: center;
+}
+#skillh2{
+  margin:5px;
+}
+.skill {
+  list-style: none;
+  padding: 0;
+  width: 1000px;
+  margin: -300px auto; /* Adjusted margin-top to move it up */
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(192, 179, 179, 0.25), 0 10px 10px rgba(211, 204, 204, 0.22);
+}
+.skill:hover {
+  box-shadow: 0 20px 40px rgba(192, 179, 179, 0.35), 0 15px 15px rgba(211, 204, 204, 0.3);
+  transition: 0.3s;
+}
+.upperSkill{
+  margin:0;
+}
 
-  #warrenSkills{position: absolute; top: 4300px;margin-left: 100px; }
-  #skillsHeader{
-    color:white;
+.skill li{
+  margin:20px 0;
+  padding:10px;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px; /* Adjusted border-radius for rounded corners */
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+  height:20px;
+  float:left;
+  background:linear-gradient(135deg,rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+
+}
+.html{
+  width:90%;
+  animation: html 3s;
+}
+.css{
+  width:70%;
+  animation: css 3s;
+}
+.javascript{
+  width:60%;
+  animation: javascript 3s;
+}
+.java{
+  width:90%;
+  animation: java 3s;
+}
+.kotlin{
+  width:70%;
+  animation: kotlin 3s;
+}
+.sql{
+  width:86%;
+  animation: sql 3s;
+}
+@keyframes html {
+  0%{
+    width:0%;
   }
-  .containerskills {
-    width: 50%; /* Full width */
-    background-color: #ddd; /* Grey background */
+  100%{
+    width:90%;
   }
   
-  .skills {
-    text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
+}
+
+@keyframes css {
+  0%{
+    width:0%;
+  }
+  100%{
+    width:70%;
   }
   
-  .html {width: 90%; background-color: #04AA6D;} /* Green */
-  .css {width: 80%; background-color: #2196F3;} /* Blue */
-  .js {width: 65%; background-color: #f44336;} /* Red */
-  .php {width: 60%; background-color: #808080;} /* Dark Grey */
+}
+@keyframes javascript {
+  0%{
+    width:0%;
+  }
+  100%{
+    width:60%;
+  }
   
+}
+
+@keyframes java {
+  0%{
+    width:0%;
+  }
+  100%{
+    width:90%;
+  }
+  
+}
+@keyframes kotlin{
+  0%{
+    width:0%;
+  }
+  100%{
+    width:70%;
+  }
+  
+}
+@keyframes sql {
+  0%{
+    width:0%;
+  }
+  100%{
+    width:86%;
+  }
+  
+}
