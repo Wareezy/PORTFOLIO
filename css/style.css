@@ -107,7 +107,7 @@ p{
 
 /* css for PROJECT PAGE */
 #warrenProjects{position: absolute; top: 2300px;left: 70px; }
-#projHead{padding-left: 100px; padding-top: 300px;padding-right:20px;}
+#projHead{padding-left: 100px; padding-top: 300px;padding-right:10px;}
 #navHeadRazor{position: absolute;font-size: 15px;
 }
 #projImg{padding-right: 60px;padding-left: 75px; padding-top: 20px;}
@@ -117,3 +117,68 @@ p{
 #warrenGrad{max-width: 120%; height: 600px; margin-top: 290px; margin-left: 30px;}
 
 
+/* CSS FOR TIMELINE */
+.timeline {
+position: relative;
+max-width: 800px;
+margin: 0 auto;
+top: -550px;
+left:-300px;
+padding: 40px 20px;
+  } 
+  /* controls the white line */
+  .timeline::after {
+ content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  } 
+  
+  /* controls the words and description */
+  .timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  color:white;
+  } 
+  
+  .timeline-item::after {
+   content: '';
+   position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+  }
+  
+  .timeline-item.left .timeline-content {
+ left: 70%;
+  }
+  
+  .timeline-item.right .timeline-content {
+  left: 20%;
+  }
+  
+  .timeline-content {
+  position: relative;
+  left: 60px;
+  }
+  
+  .timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  .timeline-description {
+ margin-bottom: 10px;
+  }
+  .timeline-description-HC {
+  margin-left: -170px;
+  } 
+  
