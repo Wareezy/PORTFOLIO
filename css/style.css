@@ -182,3 +182,27 @@ padding: 40px 20px;
   margin-left: -170px;
   } 
   
+
+  /* css for skills page */
+
+  #warrenSkills{position: absolute; top: 4300px;margin-left: 100px; }
+  #skillsHeader{
+    color:white;
+  }
+  .containerskills {
+    width: 50%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+  .html {width: 90%; background-color: #04AA6D;} /* Green */
+  .css {width: 80%; background-color: #2196F3;} /* Blue */
+  .js {width: 65%; background-color: #f44336;} /* Red */
+  .php {width: 60%; background-color: #808080;} /* Dark Grey */
+  
