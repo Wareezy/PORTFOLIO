@@ -13,10 +13,10 @@
     <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
 </head>
 <body class="bg-black p-0" id="landing">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: grey; padding-top: 2px; padding-bottom: 5px;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBarBack">
         <div class="container">
             <a class="navbar-brand hover-effect" href="index.html">
-                <img src="/assets/w.png" style="max-height: 100px; margin-left: -100px;" class="logo">
+                <img src="/assets/w.png" id="logo"  class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">HOME</a>
+                        <a class="nav-link text-white" href="#aboutPage">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">PROJECTS</a>
@@ -42,41 +42,45 @@
                         <a class="nav-link text-white" href="#">CONTACT</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ml-auto" style="padding-left: 700px;">
+                <ul class="navbar-nav ml-auto" id="logoPos" >
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="/assets/github-removebg.png" style="max-height: 50px;">
+                            <img src="/assets/github-removebg.png" id="logoImg" >
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="/assets/linkedin-removebg.png" style="max-height: 50px;">
+                            <img src="/assets/linkedin-removebg.png" id="logoImg">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+<!-- home page -->
+<section>
 
     <div class="container">
         <div class="row">
-            <h1 class="text-white mb-5" id="warrenText" style="position: absolute; top: 300px; left: 40px;">WARREN JAFTHA</h1>
-            <h2 class="text-white mb-5" id="warrenText" style="position: absolute; top: 360px; left: 40px;">Full Stack Developer</h2>
-            <h3 class="text-white mb-5" id="warrenText" style="position: absolute; top: 410px; left: 40px;">Specializes in Web Design, Mobile applications and Social media.</h3>
-            <button type="button" class="btn btn-outline-light text-gray narrow-button pulsating-button" href="#" style="position: absolute; top: 470px; left: 52px;">GET IN TOUCH</button>
-
+            <h1 class="text-white mb-5" id="warrenName">WARREN JAFTHA</h1>
+            <h2 class="text-white mb-5" id="warrenPosition">Full Stack Developer</h2>
+            <h3 class="text-white mb-5" id="warrenSpecial" >Specializes in Web Design, Mobile applications and Social media.</h3>
+            <button type="button" id="GIT" class="btn btn-outline-light text-gray narrow-button pulsating-button" href="#">GET IN TOUCH</button>
+            
             <div class="col-auto offset-md-8">
                 <div class="container-fluid mt-xl-4">
-                    <img src="/assets/home.png" class="img-fluid" style="max-width: 100%; height: 600px; margin-top: 110px; margin-left: 80px;">
+                    <img src="/assets/home.png" class="img-fluid" id="warrenHomePic">
                 </div>
             </div>
         </div>
     </div>
-
-   
+</section>
     
-    <div class="container">
-        <div class="row mt-xxl-5" style="padding-bottom: 30px; padding-top: 60px;"> <!-- Adding margin top -->
+<!-- navigation page -->
+  <section id="navPage">
+
+      <div class="container">
+          <div class="row mt-xxl-5" id="navText" > <!-- Adding margin top -->
             <div class="col text-center text-white">
                 <p>Hi, my name is Warren and before you is the navigation page.</p>
                 <p>These are all the following pathways that you can take in my portfolio, the choice is up to you.</p>
@@ -85,58 +89,61 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row justify-content-center" style="padding-left: 70px;">
+        <div class="row justify-content-center" id="navProj">
             <div class="col-md-2">
-                <button type="button" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" style="position: absolute;">ABOUT</button>
+                <button type="button" id="navHead" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" >ABOUT</button>
             </div>
             <div class="col-md-2">
-                <button type="button" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" style="position: absolute;">PROJECTS</button>
+                <button type="button" id="navHead"class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" >PROJECTS</button>
             </div>
             <div class="col-md-2">
-                <button type="button" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" style="position: absolute;">EDUCATION</button>
+                <button type="button" id="navHead"class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto">EDUCATION</button>
             </div>
             <div class="col-md-2">
-                <button type="button" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" style="position: absolute;">SKILLS</button>
+                <button type="button" id="navHead"class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" >SKILLS</button>
             </div>
             <div class="col-md-2">
-                <button type="button" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" style="position: absolute;">TESTIMONY</button>
+                <button type="button" id="navHead"class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto">TESTIMONY</button>
             </div>
         </div>
     </div>
     
     <div class="container-fluid">
-        <div class="row justify-content-center mt-lg-5 " style="padding-right: 10px;padding-left: 30px; padding-top: 20px;">
+        <div class="row justify-content-center mt-lg-5 " id="navRoutes">
             <div class="col-md-2">
-                <a href="#">  <img src="/assets/warren hand.png" class="image" alt="Image 3" height="300" width="210"></a>
-              
+                <a href="#">  <img src="/assets/warren hand.png" class="image" alt="Image 3" ></a>
+                
                 
             </div>
             <div class="col-md-2">
-                <a href="#"><img src="/assets/htmlbw.png" class="image" alt="Image 2" height="300" width="210"></a>
+                <a href="#"><img src="/assets/htmlbw.png" class="image" alt="Image 2" ></a>
                 
             </div>
             <div class="col-md-2">
                 <a href="#">
-               <img src="/assets/grade.png" class="image" alt="Image 1" height="300" width="210"> 
-            </a>
+                    <img src="/assets/grade.png" class="image" alt="Image 1"> 
+                </a>
             </div>
             <div class="col-md-2">
                 <a href="#">
-                <img src="/assets/CV.png" class="image" alt="Image 5" height="300" width="210">
-            </a>
+                    <img src="/assets/CV.png" class="image" alt="Image 5" >
+                </a>
             </div>
             <div class="col-md-2">
                 <a href="#">
-                 <img src="/assets/speaking.png" class="image" alt="Image 4" height="300" width="210">
+                    <img src="/assets/speaking.png" class="image" alt="Image 4" >
                 </a>
             </div>
         </div>
     </div>
+</section> 
 
-    <div class="container">
-        <div class="row">
-            <h1 class="text-white mb-5 speech-bubble" id="warrenText" style="position: absolute; top: 1500px;left: 40px; ">ABOUT</h1>
-            <div class="col text-white" style="position: absolute; top: 1580px;left:40px">
+<!-- about section -->
+        <section id="aboutPage">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-white mb-5 speech-bubble" id="warrenAbout">ABOUT</h1>
+            <div class="col text-white" id="warrenAboutText">
                 <p class="mb-1">Hello, I'm Warren Jaftha, a 22-year-old enthusiast with an unwavering love for programming</p>
                 <p class="mb-1">Ever since I was a kid, I've been captivated by the world of technology and the power of code.</p>
                 <p class="mb-1">It's remarkable how lines of code can transform abstract ideas into tangible, functional software.</p>
@@ -147,11 +154,75 @@
             </div>
             <div class="col-auto offset-md-8">
                 <div class="container-fluid mt-xl-5">
-                    <img src="/assets/warren_hand-removebg.png" class="img-fluid" style="max-width: 100%; height: 600px; margin-top: 110px; margin-left: 20px;">
+                    <img src="/assets/warren_hand-removebg.png" id="aboutPic" class="img-fluid" >
                 </div>
             </div>
         </div>
     </div> 
+</section>
+
+
+
+
+
+<!-- project section -->
+<section id="projectPage">
+    <div class="container-fluid">
+        <h1 class="text-white mb-5 speech-bubble" id="warrenProjects">PROJECTS</h1>
+        <div class="row justify-content-center" id="projHead">
+            <div class="col-md-2">
+                <a href="https://coruscating-figolla-185758.netlify.app"><button type="button" id="navHeadRazor"class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto">RAZOR WEBSITE</button></a>
+            </div>
+            <div class="col-md-2">
+                <a href="https://chipper-medovik-751781.netlify.app"><button type="button"id="navHead" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" >NETFLIX</button></a>
+            </div>
+            <div class="col-md-2">
+                <a href="https://admirable-florentine-ab4de0.netlify.app"><button type="button" id="navHead" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto">E-COMMERCE</button></a>
+            </div>
+            <div class="col-md-2">
+               <a href="https://chic-hamster-ef7e4e.netlify.app"><button type="button" id="navHead" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" >CALCULATOR</button></a> 
+            </div>
+            <div class="col-md-2">
+                <a href="https://clinquant-dodol-3631a8.netlify.app"></a><button type="button" id="navHead" class="btn btn-outline-light text-gray narrow-button pulsating-button ml-auto" >KEYBOARD</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-lg-5" id="projImg" >
+            <div class="col-md-2">
+                <a href="#">  <img src="/assets/razor.png" class="image" alt="Image 3"></a>
+                
+                
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="/assets/netflix.jpg" class="image" alt="Image 2" ></a>
+                
+            </div>
+            <div class="col-md-2">
+                <a href="#">
+                    <img src="/assets/e-commerce.jpg" class="image" alt="Image 1" > 
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#">
+                    <img src="/assets/calc-removebg.png" class="image" alt="Image 5">
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#">
+                    <img src="/assets/key.jpg" class="image" alt="Image 4" >
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- education and experience page -->
+
+
+
+
 
 </body>
 </html>
