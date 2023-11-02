@@ -581,9 +581,23 @@ resize:none;
   }
 }
 
-
+@media (max-width: 300px){
+  .contact{
+    padding:50px;
+  }
+  .container
+  {
+    flex-direction:column;
+  }
+  .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container .contactInfo{
+    width:100%;
+  }
+}
 /* footer css */
-/* .footer {
+ .footer {
   background-color: grey;
   color: #fff; 
   text-align: center;
@@ -592,4 +606,4 @@ resize:none;
   bottom: 0;
   width: 100%;
   padding: 20px 0;
-} */
+}
