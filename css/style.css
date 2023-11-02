@@ -607,3 +607,216 @@ resize:none;
   width: 100%;
   padding: 20px 0;
 }
+
+/* CSS for responsiveness */
+@media (max-width: 720px) {
+  #warrenName {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  #warrenPosition {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  #warrenSpecial {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  .narrow-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  #warrenName {
+      font-size: 20px;
+      margin-bottom: 5px;
+  }
+
+  #warrenPosition {
+      font-size: 16px;
+      margin-bottom: 5px;
+  }
+
+  #warrenSpecial {
+      font-size: 14px;
+      margin-bottom: 5px;
+  }
+
+  .narrow-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}
+
+/* responsiveness for nav page */
+@media (max-width: 720px) {
+  #navText p {
+      font-size: 14px;
+  }
+
+  .narrow-button {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  #navText p {
+      font-size: 12px;
+  }
+
+  .narrow-button {
+      font-size: 10px;
+  }
+}
+
+/* responsiveness for about page */
+@media (max-width: 700px) {
+  #aboutPage {
+      width: 90%;
+      margin: auto;
+  }
+
+  #warrenAbout {
+      font-size: 24px;
+      margin-bottom: 15px;
+  }
+
+  #warrenAboutText p {
+      font-size: 12px;
+      margin-bottom: 10px;
+  }
+
+  #aboutPic {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-width: 300px) {
+  #aboutPage {
+      width: 90%;
+      margin: auto;
+  }
+
+  #warrenAbout {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  #warrenAboutText p {
+      font-size: 10px;
+      margin-bottom: 8px;
+  }
+}
+
+/* responsiveness for project page */
+@media (max-width: 720px) {
+  #warrenProjects {
+      font-size: 24px;
+      margin-bottom: 15px;
+  }
+
+  .narrow-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .image {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-width: 300px) {
+  #warrenProjects {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  .narrow-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}
+
+/* responsiveness for education */
+@media (max-width: 700px) {
+  .timeline-content {
+      padding: 8px;
+  }
+
+  .timeline-date {
+      font-size: 16px;
+  }
+
+  .timeline-description {
+      font-size: 14px;
+      margin-top: 3px;
+  }
+}
+
+@media (max-width: 300px) {
+  .timeline-content {
+      padding: 6px;
+  }
+
+  .timeline-date {
+      font-size: 14px;
+  }
+
+  .timeline-description {
+      font-size: 12px;
+      margin-top: 2px;
+  }
+}
+
+/* responsiveness for skills */
+
+@media (max-width: 700px) {
+  .timeline-content {
+      padding: 8px;
+  }
+
+  .timeline-date {
+      font-size: 16px;
+  }
+
+  .timeline-description {
+      font-size: 14px;
+      margin-top: 3px;
+  }
+}
+
+@media (max-width: 300px) {
+  .timeline-content {
+      padding: 6px;
+  }
+
+  .timeline-date {
+      font-size: 14px;
+  }
+
+  .timeline-description {
+      font-size: 12px;
+      margin-top: 2px;
+  }
+}
+
+/* rresponsiveness for footer */
+@media (max-width: 720px) {
+  .footer {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 300px) {
+  .footer {
+      font-size: 12px;
+      padding: 15px 0;
+  }
+}
