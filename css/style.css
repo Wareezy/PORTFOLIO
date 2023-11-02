@@ -60,6 +60,7 @@ p{
   background-color: #333; /* Change background color on hover */
   border-radius: 5px; /* Optional: add some border-radius for a rounded effect */
   transition: 0.5s;
+  z-index: 1;
 }
 .logo{
   transition: transform 0.3s, filter 0.3s;
@@ -71,7 +72,7 @@ p{
 
 /* css for navbar 
 */
-#navBarBack{background-color: grey; padding-top: 2px; padding-bottom: 5px;}
+#navBarBack{background-color: grey; margin-top: -40px; padding-bottom: 5px;}
 #logo{max-height: 100px; margin-left: -100px;}
 
 
@@ -82,7 +83,7 @@ p{
 #warrenPosition{position: absolute; top: 360px; left: 40px;}
 #warrenSpecial{position: absolute; top: 410px; left: 40px;}
 #GIT{position: absolute; top: 470px; left: 52px;}
-#warrenHomePic{max-width: 100%; height: 600px; margin-top: 110px; margin-left: 80px;}
+#warrenHomePic{max-width: 100%; height: 600px; margin-top: 110px; margin-left: 160px;}
 #logoImg{max-height: 50px;}
 #logoPos{padding-left: 700px;}
 
@@ -91,19 +92,20 @@ p{
 #navRoutes{padding-right: 10px;padding-left: 30px; padding-top: 20px;}
 #warrenText{left:50px}
 #warrenAbout{
-  position: absolute; top: 1500px;left: 40px;
+  position: absolute; top: 1580px;left: 40px;
 }
 #navHead{position: absolute;}
 #navProj{padding-left: 70px;}
 
 
 /* css for ABOUT PAGE */
-#warrenAboutText{position: absolute; top: 1580px;left:40px}
+#warrenAboutText{position: absolute; top: 1650px;left:40px}
 #aboutPic{max-width: 100%; height: 600px; margin-top: 110px; margin-left: 20px;}
 .image{
   width: 210px;
   height: 300px;
 }
+
 
 /* css for PROJECT PAGE */
 #warrenProjects{position: absolute; top: 2300px;left: 70px; }
@@ -114,7 +116,7 @@ p{
 #projImg{padding-right: 60px;padding-left: 75px; padding-top: 20px;}
 
 /* css for EDUCATION PAGE */
-#warrenEducation{position: absolute; top: 3000px;left: 70px;}
+#warrenEducation{position: absolute; top: 3100px;left: 70px;}
 #warrenGrad{max-width: 120%; height: 600px; margin-top: 290px; margin-left: 30px;}
 
 
@@ -195,7 +197,7 @@ padding: 40px 20px;
   list-style: none;
   padding: 0;
   width: 1000px;
-  margin: -300px auto; /* Adjusted margin-top to move it up */
+  margin: -100px auto; /* Adjusted margin-top to move it up */
   color: #fff;
   padding: 20px;
   box-shadow: 0 14px 28px rgba(192, 179, 179, 0.25), 0 10px 10px rgba(211, 204, 204, 0.22);
@@ -207,8 +209,11 @@ padding: 40px 20px;
 .upperSkill{
   margin:0;
   padding-bottom: 400px;
-}
 
+}
+#skillref{
+  margin-top: 200px;
+}
 .skill li{
   margin:20px 0;
   padding:10px;
@@ -348,6 +353,7 @@ padding: 40px 20px;
   align-items:center;
   width: 1450px;
   margin: 0 auto;
+  z-index: 2;
 }
 .card{
   width: 450px;
@@ -422,3 +428,168 @@ transition: 0.5s;
     margin:20px 0;
   }
 }
+
+/* css fpr contact */
+.contact{
+  position:relative;
+  min-height: 100vh;
+  padding:50px 100px;
+  display:flex;
+  padding-top: 120px;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  background-size:cover;
+}
+
+.contact .content
+{
+  max-width:800px;
+  text-align: center;
+}
+
+.contact .content h2{
+  font-size:36px;
+  font-weight:500;
+  color:#fff;
+}
+.contact .content p{
+font-weight:500;
+color:#fff;
+}
+.container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+}
+
+.container .containerInfo{
+  width:50%;
+  display:flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box{
+  position:relative;
+  padding:20px 0;
+  display:flex;
+}
+
+.container .contactInfo .box .icon{
+  min-width:60px;
+  height:60px;
+  background:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  font-size:22px;
+}
+
+.container .contactInfo .box .text{
+  display:flex;
+  margin-left:20px;
+  font-size:16px;
+  color:#fff;
+  flex-direction:column;
+  font-weight:300;
+}
+
+.container .contactInfo .box .text h3{
+  font-weight:500;
+  color:#00bcd4;
+}
+.contactForm{
+  width:40%;
+  padding:40px;
+  margin-left: 60px;
+  background: #fff;
+}
+
+.contactForm h2{
+  font-size: 30px;
+  color:#333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox{
+  position:relative;
+  width:100%;
+  margin-top:10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+width:100%;
+padding:5px 0;
+font-size:16px;
+margin:10px 0;
+border:none;
+border-bottom:2px solid #333;
+outline: none;
+resize:none;
+}
+.contactForm .inputBox span{
+  position: absolute;
+  left:0;
+  padding:5px 0;
+  font-size:16px;
+  margin:10px 0;
+  pointer-events:none;
+  transition: 0.5s;
+  color:#666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color:#e91e63;
+  font-size:12px;
+  transform: translateY(-20px);
+
+}
+
+.contactForm .inputBox input[type=submit]{
+
+  width:100px;
+  background: #00bcd4;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  padding:10px;
+  font-size:18px;
+}
+
+@media (max-width: 720px){
+  .contact{
+    padding:50px;
+  }
+  .container
+  {
+    flex-direction:column;
+  }
+  .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container .contactInfo{
+    width:100%;
+  }
+}
+
+
+/* footer css */
+/* .footer {
+  background-color: grey;
+  color: #fff; 
+  text-align: center;
+  position: relative;
+  margin-top:100px;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+} */

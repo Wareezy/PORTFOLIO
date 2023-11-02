@@ -14,11 +14,11 @@
 
 
   <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-</head>
+  <section id="Top"></section>
 <body class="bg-black p-0" id="landing">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBarBack">
         <div class="container">
-            <a class="navbar-brand hover-effect" href="index.html">
+            <a class="navbar-brand hover-effect" href="#Top">
                 <img src="https://i.postimg.cc/wM7zw4RQ/w.png" id="logo"  class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,19 +30,19 @@
                         <a class="nav-link text-white" href="#aboutPage">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">PROJECTS</a>
+                        <a class="nav-link text-white" href="#projectPage">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">EDUCATION</a>
+                        <a class="nav-link text-white" href="#Education">EDUCATION</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">SKILLS</a>
+                        <a class="nav-link text-white" href="#skill">SKILLS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">TESTIMONY</a>
+                        <a class="nav-link text-white" href="#test">TESTIMONY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">CONTACT</a>
+                        <a class="nav-link text-white" href="#cont">CONTACT</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto" id="logoPos" >
@@ -68,8 +68,9 @@
             <h1 class="text-white mb-5" id="warrenName">WARREN JAFTHA</h1>
             <h2 class="text-white mb-5" id="warrenPosition">Full Stack Developer</h2>
             <h3 class="text-white mb-5" id="warrenSpecial" >Specializes in Web Design, Mobile applications and Social media.</h3>
-            <button type="button" id="GIT" class="btn btn-outline-light text-gray narrow-button pulsating-button" href="#">GET IN TOUCH</button>
-            
+            <a href="#navPage">
+            <button type="button" id="GIT" class="btn btn-outline-light text-gray narrow-button pulsating-button">Lets Go</button>
+            </a>
             <div class="col-auto offset-md-8">
                 <div class="container-fluid mt-xl-4">
                     <img src="https://i.postimg.cc/gjJzfkQR/home-2.png" class="img-fluid" id="warrenHomePic">
@@ -241,7 +242,7 @@
 </section>
 
 <!-- education and experience page -->
-<section>
+<section id="Education">
  <div class="container-fluid">
     <h1 class="text-white mb-5 speech-bubble" id="warrenEducation">EDUCATION & EXPERIENCE</h1>
     
@@ -301,10 +302,10 @@
      
  </div>
 
-
-<section>
-    <div class="upperSkill">
-<div class="skill">
+    
+<section id="skillsref">
+    <div class="upperSkill" id="upperSkill">
+<div class="skill" id="skill" >
 <h1 id="skillh1">my skills</h1>
 <li><h3 id="skillh3">HTML-proficient</h3>
 <span class="bar"><span class="html"></span></span>
@@ -329,9 +330,8 @@
 </div>
 </section>
 
-
 <!-- testimony -->
-<section>
+<section id="test">
     <div class="wrapper">
         <h1>TESTIMONY</h1>
         <h5>Checkout what they say about me</h5>
@@ -368,15 +368,77 @@
             </div> 
           
     </div>  
- <!-- <div class="card2">
-                <img src="#">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <h2>Some else3</h2>
-                <h4>programmer</h4>
-                <i class="fa fa-quote-left"></i>
-            </div> -->
 </div>
-
 </section>
+
+
+<section class="contact" id="cont">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>We're delighted that you're here. Whether you have questions, suggestions, or just want to say hello, we're ready to listen. Your thoughts matter to us, and we're eager to assist.
+
+            Thanks for reaching out - we can't wait to connect with you!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>5 Grysbok Avenue,</p>
+                        <p>Lotus River,</p>
+                        <p>7941</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>061-862-0283</p>
+                    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>warrenjaftha16@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form 
+                action="https://formspree.io/f/xleyvgak"
+                method="POST"
+                >
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea required="required" name="message"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+
+            </div>
+        
+    </div>
+</section>
+<!-- <footer class="footer">
+    <p>@Warren Jaftha- 2023</p>
+</footer> -->
 </body>
 </html>
